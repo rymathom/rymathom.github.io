@@ -1,0 +1,188 @@
+/*
+  TODO:
+  - Descriptions
+  - fix Resume and GitHub
+  - change font
+*/
+
+/* COLUMN STUFF */
+html, body {
+  max-width: 100%;
+  background-color: #f4f0fb;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#loader {
+  position: absolute;
+  margin: 0;
+  left: calc(50vw - 7.5vmin);
+  top: calc(50vh - 13.333vmin);
+  width: 15vmin;
+}
+
+#page {
+  display: none;
+}
+
+.fade-in {
+  animation-name: fade-in;
+  animation-duration: 2s;
+}
+
+@keyframes fade-in { 
+  from{ opacity:0 } 
+  to{ opacity:1 }
+}
+
+#column {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 35vmin;
+  height: 100vh;
+  background-color: white;
+}
+
+h1 {
+  font-size: 4.5vmin;
+  margin-top: 2.5vh;
+  margin-bottom: 0;
+  padding: 0;
+  cursor: pointer; /* so user knows it can be clicked */
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* when over the list */
+ul {
+  display: none;
+  list-style-type: none;
+  font-family: 'Nunito', sans-serif;
+  padding: 0;
+  margin: 0;
+  cursor: pointer; /* so user knows it can be clicked */
+  text-align: center;
+}
+
+/* media typography */
+.media {
+  font-size: 2.75vmin;
+  font-weight: 300;
+}
+
+.media:hover {
+  color: hotpink;
+}
+
+/* project typography */
+.project {
+  font-size: 2vmin;
+  font-weight: 200;
+}
+
+.project:hover {
+  color: #9d7ede;
+}
+
+a {
+  text-decoration: none;
+  color: #9d7ede;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+#resume {
+  font-size: 2vmin;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 3.5vh; 
+  margin-left: 5vmin;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+}
+
+#github {
+  font-size: 2vmin;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 3.5vh; 
+  margin-right: 5vmin;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+}
+
+/* PROJECT STUFF */
+#panel {
+  position: absolute;
+  top: 0;
+  left: 35vmin;
+  width: calc(100vw - 35vmin);
+  text-align: center;
+}
+
+p {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+}
+
+
+/* TODO: fix intro */
+#intro {
+  margin-top: 44vh; /* fix this is the future */
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: auto;
+  font-size: 2.5vmin;
+  font-weight: 300;
+}
+
+h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 3vmin;
+  font-weight: 500;
+  margin-top: 3.5vh;
+  margin-bottom: 0vh;
+}
+
+.description {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  font-size: 1.75vmin;
+  font-weight: 200;
+}
+
+.content {
+  display: none;
+}
+
+img {
+  width: calc(80vw - 35vmin);
+  margin: 1vh;
+}
+
+.youtube {
+  width: calc(80vw - 35vmin);
+  height: calc(0.5615 * calc(80vw - 35vmin));
+  margin: 1vh;
+}
+
+.processing {
+  max-width: calc(80vw - 35vmin);
+  max-height: calc(80vw - 35vmin);
+  margin-right: 10vw;
+  margin-left: 10vw;
+  margin-top: 1vh;
+  margin-bottom 1vh;
+}
+
+.bottom {
+  margin: 3.5vh;
+}
